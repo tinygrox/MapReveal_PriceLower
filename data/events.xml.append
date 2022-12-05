@@ -1,26 +1,14 @@
-<mod:findComposite>
-    <mod:par op="OR">
-        <mod:findName type="event" name="START_BEACON"/>
-        <mod:findName type="event" name="START_BEACON_LANIUS"/>
-        <mod:findName type="event" name="START_BEACON_ENGI"/>
-        <mod:findName type="event" name="START_BEACON_MANTIS"/>
-        <mod:findName type="event" name="START_BEACON_NEBULA"/>
-        <mod:findName type="event" name="START_BEACON_PIRATE"/>
-        <mod:findName type="event" name="START_BEACON_REBEL"/>
-        <mod:findName type="event" name="START_BEACON_ROCK"/>
-        <mod:findName type="event" name="START_BEACON_SLUG"/>
-        <mod:findName type="event" name="START_BEACON_ZOLTAN"/>
-    </mod:par>
-    <mod-append:item_modify>
-        <item type="missiles" min="10" max="20"/>
-        <item type="fuel" min="10" max="20"/>
-        <item type="drones" min="10" max="20"/>
-        <item type="scrap" min="10" max="100"/>
-    </mod-append:item_modify>
+<mod:findName type="event" name="START_BEACON">
     <mod-append:choice>
-        <text id="give_you_choice" />
+        <text id="give_you_choice"/>
         <event>
             <text id="you_made_your_choice"/>
+            <item_modify>
+                <item type="missiles" min="10" max="100"/>
+                <item type="fuel" min="10" max="100"/>
+                <item type="drones" min="10" max="100"/>
+                <item type="scrap" min="10" max="100"/>
+            </item_modify>
             <reveal_map/>
         </event>
     </mod-append:choice>
@@ -28,7 +16,26 @@
         <text id="continue"/>
         <event/>
     </mod-append:choice>
-</mod:findComposite>
-<mod:findName type="event" name="START_BEACON_CRYSTAL">
-    <mod-append:reveal_map/>
-</mod:findLike>
+</mod:findName>
+
+<mod:findName type="event" name="START_GAME">
+    <mod-append:choice>
+        <text id="continue"/>
+        <event>
+            <text id="you_poor_little_guy"/>
+            <item_modify>
+                <item type="missiles" min="10" max="100"/>
+                <item type="fuel" min="10" max="100"/>
+                <item type="drones" min="10" max="100"/>
+                <item type="scrap" min="10" max="100"/>
+            </item_modify>
+            <reveal_map/>
+            <event load="MERCY_FOR_POOR"/>
+        </event>
+    </mod-append:choice>
+</mod:findName>
+
+<event name="MERCY_FOR_POOR">
+    <weapon name="STARTING_WEAPONS"/>
+    <upgrade amount="2" system="reactor"/>
+</event>

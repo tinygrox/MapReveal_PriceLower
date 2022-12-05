@@ -1,4 +1,4 @@
-<mod:findName type="event" name="START_BEACON_LANIUS">
+<mod:findName type="event" name="START_BEACON_MANTIS">
     <mod-append:choice>
         <text id="give_you_choice"/>
         <event>
