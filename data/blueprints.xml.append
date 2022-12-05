@@ -1,0 +1,118 @@
+<mod:findComposite>
+    <mod:par op="OR">
+        <mod:findLike type="crewBlueprint"/>
+        <mod:findLike type="weaponBlueprint"/>
+        <mod:findLike type="droneBlueprint"/>
+        <mod:findLike type="augBlueprint"/>
+    </mod:par>
+    <mod-overwrite:cost>10</mod-overwrite:cost>
+</mod:findComposite>
+<mod:findName type="systemBlueprint" name="oxygen">
+    <mod-overwrite:upgradeCost>
+        <level>1</level> <!-- 25-->
+        <level>1</level> <!-- 50-->
+        <level>1</level> <!-- 75-->
+    </mod-overwrite:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="teleporter">
+    <mod-overwrite:cost>10</mod-overwrite:cost>
+    <mod-overwrite:upgradeCost>
+        <level>1</level> <!-- 30-->
+        <level>1</level> <!-- 60-->
+    </mod-overwrite:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="cloaking">
+    <mod-overwrite:cost>10</mod-overwrite:cost>
+    <mod-overwrite:upgradeCost>
+        <level>1</level>
+        <level>1</level>
+    </mod-overwrite:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="pilot">
+    <mod-overwrite:upgradeCost>
+        <level>1</level>
+        <level>1</level>
+    </mod-overwrite:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="medbay">
+    <mod-overwrite:cost>10</mod-overwrite:cost>
+    <mod-overwrite:upgradeCost>
+        <level>1</level>
+        <level>1</level>
+    </mod-overwrite:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="shields">
+    <mod-overwrite:cost>10</mod-overwrite:cost>
+    <mod-overwrite:upgradeCost>
+        <level>1</level> <!-- <level>100</level> -->
+        <level>1</level> <!-- <level>20</level> -->
+        <level>1</level> <!-- <level>30</level> -->
+        <level>1</level> <!-- <level>40</level> -->
+        <level>1</level> <!-- <level>60</level> -->
+        <level>1</level> <!-- <level>80</level> -->
+        <level>1</level> <!-- <level>100</level> -->
+        <level>1</level> <!-- <level>120</level> -->
+    </mod-overwrite:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="engines">
+    <mod-overwrite:upgradeCost>
+        <level>1</level> <!-- <level>10</level> -->
+        <level>1</level> <!-- <level>15</level> -->
+        <level>1</level> <!-- <level>30</level> -->
+        <level>1</level> <!-- <level>40</level> -->
+        <level>1</level> <!-- <level>60</level> -->
+        <level>1</level> <!-- <level>80</level> -->
+        <level>1</level> <!-- <level>120</level> -->
+        <level>1</level> <!-- <level>150</level> -->
+    </mod-overwrite:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="weapons">
+    <mod-overwrite:cost>10</mod-overwrite:cost>
+    <mod-overwrite:upgradeCost>
+        <level>1</level> <!-- <level>40</level> -->
+        <level>1</level> <!-- <level>25</level> -->
+        <level>1</level> <!-- <level>35</level> -->
+        <level>1</level> <!-- <level>50</level> -->
+        <level>1</level> <!-- <level>75</level> -->
+        <level>1</level> <!-- <level>90</level> -->
+        <level>1</level> <!-- <level>100</level> -->
+        <level>1</level> <!-- <level>120</level> -->
+    </mod-overwrite:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="drones">
+    <mod-overwrite:cost>10</mod-overwrite:cost>
+    <mod-overwrite:upgradeCost>
+        <level>1</level>
+        <level>2</level>
+        <level>1</level>
+        <level>1</level>
+        <level>1</level>
+        <level>1</level>
+        <level>1</level>
+        <level>1</level>
+    </mod-overwrite:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="sensors">
+    <mod-overwrite:cost>10</mod-overwrite:cost>
+    <mod-overwrite:upgradeCost>
+        <level>1</level>
+        <level>1</level>
+    </mod-overwrite:upgradeCost>
+</mod:findName>
+
+<mod:findName type="systemBlueprint" name="doors">
+    <mod-overwrite:cost>10</mod-overwrite:cost>
+    <mod-overwrite:upgradeCost>
+        <level>1</level>
+        <level>1</level>
+    </mod-overwrite:upgradeCost>
+</mod:findName>

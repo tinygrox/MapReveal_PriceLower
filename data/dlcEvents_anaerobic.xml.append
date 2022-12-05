@@ -1,0 +1,12 @@
+<mod:findComposite>
+    <mod:par op="OR">
+        <mod:findLike type="event" name="START_BEACON_LANIUS"/>
+    </mod:par>
+    <mod-append:choice hidden="true">
+        <text id="give_you_choice"/>
+        <event>
+            <text id="you_made_your_choice"/>
+            <reveal_map/>
+        </event>
+    </mod-append:choice>
+</mod:findComposite>

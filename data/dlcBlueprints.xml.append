@@ -1,0 +1,43 @@
+<mod:findComposite>
+    <mod:par op="OR">
+        <mod:findLike type="crewBlueprint"/>
+        <mod:findLike type="weaponBlueprint"/>
+        <mod:findLike type="droneBlueprint"/>
+        <mod:findLike type="augBlueprint"/>
+    </mod:par>
+    <mod-overwrite:cost>10</mod-overwrite:cost>
+</mod:findComposite>
+<mod:findName type="systemBlueprint" name="oxygen">
+    <mod-overwrite:upgradeCost>
+        <level>1</level> <!-- 25-->
+        <level>1</level> <!-- 50-->
+        <level>1</level> <!-- 75-->
+    </mod-overwrite:upgradeCost>
+</mod:findName>
+<mod:findName type="systemBlueprint" name="clonebay">
+    <mod-overwrite:cost>10</mod-overwrite:cost>
+    <mod-overwrite:upgradeCost>
+        <level>1</level>
+        <level>1</level>
+    </mod-overwrite:upgradeCost>
+</mod:findName>
+<mod:findName type="systemBlueprint" name="hacking">
+    <mod-overwrite:cost>10</mod-overwrite:cost>
+    <mod-overwrite:upgradeCost>
+        <level>1</level>
+        <level>1</level>
+    </mod-overwrite:upgradeCost>
+</mod:findName>
+<mod:findName type="systemBlueprint" name="battery">
+    <mod-overwrite:cost>2</mod-overwrite:cost>
+    <mod-overwrite:upgradeCost>
+        <level>1</level>
+    </mod-overwrite:upgradeCost>
+</mod:findName>
+<mod:findName type="systemBlueprint" name="mind">
+    <mod-overwrite:cost>10</mod-overwrite:cost>
+    <mod-overwrite:upgradeCost>
+        <level>1</level>
+        <level>1</level>
+    </mod-overwrite:upgradeCost>
+</mod:findName>
