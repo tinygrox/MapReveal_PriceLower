@@ -75,6 +75,7 @@
 
 <mod:findName type="systemBlueprint" name="weapons">
     <mod-overwrite:cost>10</mod-overwrite:cost>
+    <mod-overwrite:maxPower>10</mod-overwrite:maxPower>
     <mod-overwrite:upgradeCost>
         <level>1</level> <!-- <level>40</level> -->
         <level>1</level> <!-- <level>25</level> -->
@@ -84,6 +85,8 @@
         <level>1</level> <!-- <level>90</level> -->
         <level>1</level> <!-- <level>100</level> -->
         <level>1</level> <!-- <level>120</level> -->
+        <level>1</level>
+        <level>1</level>
     </mod-overwrite:upgradeCost>
 </mod:findName>
 
@@ -91,7 +94,7 @@
     <mod-overwrite:cost>10</mod-overwrite:cost>
     <mod-overwrite:upgradeCost>
         <level>1</level>
-        <level>2</level>
+        <level>1</level>
         <level>1</level>
         <level>1</level>
         <level>1</level>

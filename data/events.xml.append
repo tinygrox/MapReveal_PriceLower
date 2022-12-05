@@ -4,12 +4,23 @@
         <event>
             <text id="you_made_your_choice"/>
             <item_modify>
-                <item type="missiles" min="10" max="100"/>
-                <item type="fuel" min="10" max="100"/>
-                <item type="drones" min="10" max="100"/>
-                <item type="scrap" min="10" max="100"/>
+                <item type="missiles" min="10" max="50"/>
+                <item type="fuel" min="10" max="50"/>
+                <item type="drones" min="10" max="50"/>
+                <item type="scrap" min="50" max="1000"/>
             </item_modify>
             <reveal_map/>
+            <choice>
+                <text id="you_poor_little_guy"/>
+                <event>
+                    <weapon name="STARTING_WEAPONS"/>
+                    <upgrade amount="2" system="reactor"/>
+                </event>
+            </choice>
+            <choice>
+                <text id="self_respect"/>
+                <event/>
+            </choice>
         </event>
     </mod-append:choice>
     <mod-append:choice>
@@ -17,25 +28,3 @@
         <event/>
     </mod-append:choice>
 </mod:findName>
-
-<mod:findName type="event" name="START_GAME">
-    <mod-append:choice>
-        <text id="continue"/>
-        <event>
-            <text id="you_poor_little_guy"/>
-            <item_modify>
-                <item type="missiles" min="10" max="100"/>
-                <item type="fuel" min="10" max="100"/>
-                <item type="drones" min="10" max="100"/>
-                <item type="scrap" min="10" max="100"/>
-            </item_modify>
-            <reveal_map/>
-            <event load="MERCY_FOR_POOR"/>
-        </event>
-    </mod-append:choice>
-</mod:findName>
-
-<event name="MERCY_FOR_POOR">
-    <weapon name="STARTING_WEAPONS"/>
-    <upgrade amount="2" system="reactor"/>
-</event>

@@ -5,11 +5,22 @@
             <text id="you_made_your_choice"/>
             <item_modify>
                 <item type="missiles" min="10" max="100"/>
-                <item type="fuel" min="10" max="100"/>
+                <item type="fuel" min="10" max="20"/>
                 <item type="drones" min="10" max="100"/>
-                <item type="scrap" min="10" max="100"/>
+                <item type="scrap" min="100" max="500"/>
             </item_modify>
             <reveal_map/>
+            <choice>
+                <text id="you_poor_little_guy"/>
+                <event>
+                    <weapon name="STARTING_WEAPONS"/>
+                    <upgrade amount="2" system="reactor"/>
+                </event>
+            </choice>
+            <choice>
+                <text id="self_respect"/>
+                <event/>
+            </choice>
         </event>
     </mod-append:choice>
 
