@@ -1,0 +1,50 @@
+<mod:findName type="event" name="LAST_STAND_START">
+    <mod-overwrite:choice>
+        <text id="event_LAST_STAND_START_c1_choice"/>
+        <event>
+            <text id="event_LAST_STAND_START_c1_text"/>
+            <choice hidden="true">
+                <text id="event_LAST_STAND_START_c1_c1_choice"/>
+                <event>
+                    <text id="event_LAST_STAND_START_c1_c1_text"/>
+                    <reveal_map/>
+                    <item_modify>
+                        <item type="fuel" min="10" max="10"/>
+                    </item_modify>
+                    <weapon name="SHOTGUN"/>
+                    <weapon name="SHOTGUN"/>
+                    <weapon name="SHOTGUN"/>
+                    <damage amount="-30"/>
+                </event>
+            </choice>
+        </event>
+    </mod-overwrite:choice>
+</mod:findName>
+
+<mod:findName type="event" name="FEDERATION_BASE">
+    <mod-append:choice>
+        <text id="give_you_choice"/>
+        <event>
+            <text id="you_made_your_choice"/>
+            <item_modify>
+                <item type="missiles" min="10" max="60"/>
+                <item type="fuel" min="10" max="60"/>
+                <item type="drones" min="10" max="60"/>
+            </item_modify>
+            <reveal_map/>
+            <choice>
+                <text id="you_poor_little_guy"/>
+                <event>
+                    <damage amount="-30"/>
+                    <weapon name="SHOTGUN"/>
+                    <weapon name="SHOTGUN"/>
+                    <weapon name="SHOTGUN"/>
+                </event>
+            </choice>
+            <choice>
+                <text id="self_respect"/>
+                <event/>
+            </choice>
+        </event>
+    </mod-append:choice>
+</mod:findName>

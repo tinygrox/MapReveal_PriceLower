@@ -4,10 +4,10 @@
         <event>
             <text id="you_made_your_choice"/>
             <item_modify>
-                <item type="missiles" min="10" max="50"/>
-                <item type="fuel" min="10" max="50"/>
-                <item type="drones" min="10" max="50"/>
-                <item type="scrap" min="50" max="1000"/>
+                <item type="missiles" min="10" max="60"/>
+                <item type="fuel" min="10" max="60"/>
+                <item type="drones" min="10" max="60"/>
+                <item type="scrap" min="100" max="500"/>
             </item_modify>
             <reveal_map/>
             <choice>
